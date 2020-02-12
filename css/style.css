@@ -59,11 +59,9 @@ nav {
   .burger span {
     top: 8px; }
 
-.slider {
-  background: url(/img/Slider_Block/Layer_1.jpg) no-repeat center;
-  background-size: cover;
-  height: 700px;
-  width: 100%; }
-  .slider h1 {
-    font-size: 30px;
-    color: white; }
+.news {
+  background: url(/Img/Slider_Block/Layer_1.jpg) no-repeat center;
+  background-size: cover; }
+  .news_slider {
+    max-width: 700px;
+    margin: 0 auto; }

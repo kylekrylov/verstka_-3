@@ -51,7 +51,7 @@ nav {
     width: 30px;
     height: 4px;
     transition: all 0.1s ease 0s;
-    border-radius: 2px; 
+    border-radius: 2px;
   }
   &:before {
     top: 0;
@@ -65,13 +65,11 @@ nav {
   display: none; //!!
 }
 
-.slider {
-  background: url(/img/Slider_Block/Layer_1.jpg) no-repeat center;
+.news {
+  background: url(/Img/Slider_Block/Layer_1.jpg) no-repeat center;
   background-size: cover;
-  height: 700px;
-  width: 100%;
-  h1 {
-    font-size: 30px;
-    color: white;
+  &_slider {
+    max-width: 700px;
+    margin: 0 auto;
   }
 }
