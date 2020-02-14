@@ -146,3 +146,22 @@ nav {
         height: 40px;
     }
 }
+
+#ball {
+    width: 50px;
+    height: 50px;
+    background-color: #f4bb36;
+    border-radius: 50%;
+    left: calc(50% - 25px);
+    top: 5%;
+    position: absolute;
+    p {
+        content: "drag me";
+        text-align: center;
+        font-size: 14px;
+        font-family: "Open Sans";
+        font-weight: 800;
+        margin: 3px;
+        &:hover
+    }
+}
