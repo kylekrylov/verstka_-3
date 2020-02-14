@@ -75,9 +75,9 @@ nav {
 }
 
 .news {
-    background: url(../Img/Slider_Block/Layer_1.jpg) no-repeat center;
-    background-size: cover;
     // background-color: rgba(0, 0, 0, 0.36);
+    background: url(../img/slider_block/layer_1.jpg) no-repeat center;
+    background-size: cover;
     height: 590px;
     display: flex;
     justify-content: center;
@@ -85,8 +85,8 @@ nav {
     &_slider {
         max-width: 90%;
         &_block {
+            outline: none;
             &_text {
-                outline: none;
                 text-align: center;
                 font-family: "Open Sans";
                 color: #ffffff;

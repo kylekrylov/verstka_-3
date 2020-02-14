@@ -99,7 +99,7 @@ nav ul a {
 }
 
 .news {
-  background: url(../Img/Slider_Block/Layer_1.jpg) no-repeat center;
+  background: url(../img/slider_block/layer_1.jpg) no-repeat center;
   background-size: cover;
   height: 590px;
   display: -webkit-box;
@@ -117,8 +117,11 @@ nav ul a {
   max-width: 90%;
 }
 
-.news_slider_block_text {
+.news_slider_block {
   outline: none;
+}
+
+.news_slider_block_text {
   text-align: center;
   font-family: "Open Sans";
   color: #ffffff;
