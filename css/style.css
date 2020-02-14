@@ -29,6 +29,12 @@ nav ul li:after {
   margin: 0 30px 0;
 }
 
+@media (max-width: 1024px) {
+  nav ul li:after {
+    margin: 0 20px 0;
+  }
+}
+
 nav ul li:last-child::after {
   content: "";
   margin: 0;
@@ -46,6 +52,12 @@ nav ul a {
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
 }
 
 .burger {
@@ -80,6 +92,12 @@ nav ul a {
   top: 8px;
 }
 
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+}
+
 .news {
   background: url(/img/Slider_Block/Layer_1.jpg) no-repeat center;
   background-size: cover;
@@ -99,30 +117,42 @@ nav ul a {
   max-width: 90%;
 }
 
-.news_slider_block {
+.news_slider_block_text {
   outline: none;
   text-align: center;
   font-family: "Open Sans";
   color: #ffffff;
 }
 
-.news_slider_block h3 {
+.news_slider_block_text h3 {
   margin: 120px 0 0 0;
   font-size: 28px;
   font-weight: 400;
 }
 
-.news_slider_block h1 {
+@media (max-width: 768px) {
+  .news_slider_block_text h3 {
+    margin: 30px 0 0 0;
+  }
+}
+
+.news_slider_block_text h1 {
   text-shadow: 2px 3px 0 rgba(0, 0, 0, 0.36);
   font-size: 65px;
   text-transform: uppercase;
 }
 
-.news_slider_block h1 span {
+.news_slider_block_text h1 span {
   color: #f4bb36;
 }
 
-.news_slider_block p {
+@media (max-width: 768px) {
+  .news_slider_block_text h1 {
+    font-size: 45px;
+  }
+}
+
+.news_slider_block_text p {
   font-size: 15px;
   font-weight: 400;
   max-width: 900px;
@@ -130,9 +160,20 @@ nav ul a {
   text-transform: none;
 }
 
-.news_slider_block img {
+.news_slider_block_sl-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.news_slider_block_sl-img img {
   max-height: 500px;
-  margin: 0 auto;
 }
 
 .btn {
@@ -188,10 +229,19 @@ nav ul a {
   position: absolute;
 }
 
-#ball p {
+#ball span {
+  display: block;
   text-align: center;
   font-size: 14px;
   font-family: "Open Sans";
   font-weight: 800;
-  margin: 3px;
+  margin: 12px 0;
+  text-transform: uppercase;
+  line-height: 14px;
+}
+
+@media (max-width: 1024px) {
+  #ball {
+    display: none;
+  }
 }

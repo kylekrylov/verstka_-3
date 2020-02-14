@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:900');
-.wrap {
+.news_slider_block_btn {
     height: 500px;
     box-sizing: border-box;
     display: flex;
@@ -14,6 +14,7 @@
     letter-spacing: 1px;
     font-size: 2rem;
     box-sizing: border-box;
+    outline: none;
 }
 
 .my-super-cool-btn span {
