@@ -99,8 +99,8 @@ nav ul a {
 }
 
 .news {
+  background: url(../img/slider_block/layer_1.jpg) no-repeat center;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.36);
   height: 590px;
   display: -webkit-box;
   display: -ms-flexbox;
