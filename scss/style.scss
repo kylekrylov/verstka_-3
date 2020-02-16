@@ -82,7 +82,7 @@ nav {
     justify-content: center;
     align-items: center;
     &_slider {
-        max-width: 90%;
+        max-width: 100%;
         &_block {
             outline: none;
             &_text {
@@ -99,6 +99,13 @@ nav {
                         margin: 30px 0 0 0;
                     }
                 }
+                p {
+                    font-size: 15px;
+                    font-weight: 400;
+                    max-width: 900px;
+                    margin: 0 auto;
+                    text-transform: none;
+                }
                 h1 {
                     text-shadow: 2px 3px 0 rgba(0, 0, 0, 0.36);
                     font-size: 65px;
@@ -111,13 +118,6 @@ nav {
                         font-size: 45px;
                         // line-height: 34px;
                     }
-                }
-                p {
-                    font-size: 15px;
-                    font-weight: 400;
-                    max-width: 900px;
-                    margin: 0 auto;
-                    text-transform: none;
                 }
             }
             &_sl-img {
