@@ -1,5 +1,18 @@
-@import url("../scss/resrt.css");
-@import url("../scss/button.css");
+@import url("reset.css");
+@import url("button.css");
+h3 {
+  margin-top: 90px;
+  font-size: 30px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 77.37px;
+  text-transform: uppercase;
+}
+
+p {
+  margin-top: 20px;
+}
+
 nav {
   background-color: #ffffff;
   width: 100%;
@@ -47,7 +60,6 @@ nav ul a {
   width: 664px;
   height: 13px;
   color: #000000;
-  font-family: "Open Sans";
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
@@ -99,8 +111,7 @@ nav ul a {
 }
 
 .news {
-  background: url(../img/slider_block/layer_1.jpg) no-repeat center;
-  background-size: cover;
+  background: url(../img/slider_block/layer_1.jpg) no-repeat center/cover;
   height: 590px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -122,21 +133,26 @@ nav ul a {
 }
 
 .news_slider_block_text {
+  margin-top: 120px;
   text-align: center;
-  font-family: "Open Sans";
   color: #ffffff;
 }
 
-.news_slider_block_text h3 {
-  margin: 120px 0 0 0;
-  font-size: 28px;
-  font-weight: 400;
+@media (max-width: 768px) {
+  .news_slider_block_text {
+    margin: 60px 0 0 0;
+  }
 }
 
-@media (max-width: 768px) {
-  .news_slider_block_text h3 {
+@media (max-width: 425px) {
+  .news_slider_block_text {
     margin: 30px 0 0 0;
   }
+}
+
+.news_slider_block_text p:first-child {
+  font-size: 28px;
+  font-weight: 400;
 }
 
 .news_slider_block_text p {
@@ -236,7 +252,6 @@ nav ul a {
   display: block;
   text-align: center;
   font-size: 14px;
-  font-family: "Open Sans";
   font-weight: 800;
   margin: 12px 0;
   text-transform: uppercase;
@@ -263,4 +278,36 @@ nav ul a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.workflow {
+  background: #f3f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.workflow_element_greeting {
+  text-align: center;
+}
+
+.workflow_element_greeting h3 {
+  color: #f4bb36;
+}
+
+.workflow_element_greeting p {
+  max-width: 1158px;
+  margin: 0 auto;
+  /* Style for "Lorem Ipsu" */
+  color: #414141;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.workflow_element_processes {
+  padding: 0;
 }
