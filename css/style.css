@@ -1,12 +1,13 @@
 @import url("reset.css");
 @import url("button.css");
 h3 {
-  margin-top: 90px;
+  padding-top: 90px;
   font-size: 30px;
   font-size: 30px;
   font-weight: 700;
   line-height: 77.37px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 p {
@@ -238,60 +239,17 @@ nav ul a {
   height: 40px;
 }
 
-#ball {
-  width: 50px;
-  height: 50px;
-  background-color: #f4bb36;
-  border-radius: 50%;
-  left: calc(50% - 25px);
-  top: 5%;
-  position: absolute;
-}
-
-#ball span {
-  display: block;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 800;
-  margin: 12px 0;
-  text-transform: uppercase;
-  line-height: 14px;
-}
-
-@media (max-width: 1024px) {
-  #ball {
-    display: none;
-  }
-}
-
-.wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .workflow {
-  background: #f3f3f3;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  background: #fafafa;
+  height: 780px;
+  width: 100%;
 }
 
-.workflow_element_greeting {
-  text-align: center;
+.workflow_element {
+  display: block;
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .workflow_element_greeting h3 {
@@ -299,9 +257,7 @@ nav ul a {
 }
 
 .workflow_element_greeting p {
-  max-width: 1158px;
   margin: 0 auto;
-  /* Style for "Lorem Ipsu" */
   color: #414141;
   font-size: 15px;
   font-weight: 700;
@@ -309,5 +265,54 @@ nav ul a {
 }
 
 .workflow_element_processes {
-  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.workflow_element_processes_process {
+  margin: 60px 50px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.workflow_element_processes_process_img {
+  height: 54px;
+  width: 54px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 12px;
+}
+
+.workflow_element_processes_process_img img {
+  height: 26px;
+  margin: 0 12px;
+}
+
+.workflow_element_processes_process_text h4 {
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.workflow_element_processes_process_text p {
+  width: 253px;
+  color: #414141;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  /* Text style for "Lorem Ipsu" */
+  letter-spacing: 0.14px;
 }
