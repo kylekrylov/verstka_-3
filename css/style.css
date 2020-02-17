@@ -1,5 +1,15 @@
 @import url("reset.css");
 @import url("button.css");
+@import url("workflow.css");
+@font-face {
+  font-family: 'Open-sans';
+  src: url(fond/Open_Sans/OpenSans-Light.ttf);
+}
+
+* {
+  font-family: 'Open-sans', Arial, Helvetica, sans-serif;
+}
+
 h3 {
   padding-top: 90px;
   font-size: 30px;
@@ -131,9 +141,20 @@ nav ul a {
 
 .news_slider_block {
   outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .news_slider_block_text {
+  max-width: 1185px;
+  margin: 0 auto;
   margin-top: 120px;
   text-align: center;
   color: #ffffff;
@@ -156,7 +177,7 @@ nav ul a {
   font-weight: 400;
 }
 
-.news_slider_block_text p {
+.news_slider_block_text p:last-child {
   font-size: 15px;
   font-weight: 400;
   max-width: 900px;
@@ -187,9 +208,6 @@ nav ul a {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .news_slider_block_sl-img img {
@@ -239,91 +257,18 @@ nav ul a {
   height: 40px;
 }
 
-.workflow {
-  background: #fafafa;
-  width: 100%;
-}
-
-.workflow_element {
-  display: block;
-  max-width: 1158px;
-  margin: 0 auto;
-  padding: 0 20px 40px;
-}
-
-.workflow_element_greeting h3 {
-  color: #f4bb36;
-}
-
-.workflow_element_greeting p {
-  margin: 0 auto;
-  color: #414141;
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 24px;
-}
-
-.workflow_element_processes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.workflow_element_processes_process {
-  margin: 60px 50px 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media (max-width: 768px) {
-  .workflow_element_processes_process {
-    margin: 30px 0 0 0;
-  }
-}
-
-.workflow_element_processes_process_img {
-  height: 54px;
-  width: 54px;
-  border: 1px solid black;
-  border-radius: 50%;
+.wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-right: 12px;
-}
-
-.workflow_element_processes_process_img img {
-  height: 26px;
-  margin: 0 12px;
-}
-
-.workflow_element_processes_process_text h4 {
-  margin-top: 10px;
-  font-size: 25px;
-  font-weight: 300;
-}
-
-.workflow_element_processes_process_text p {
-  max-width: 253px;
-  color: #414141;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  /* Text style for "Lorem Ipsu" */
-  letter-spacing: 0.14px;
 }

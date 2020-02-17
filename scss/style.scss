@@ -1,7 +1,17 @@
 @import url("reset.css");
 @import url("button.css");
+@import url("workflow.css");
 $yel: #f4bb36;
 $grey: #414141;
+@font-face {
+    font-family: 'Open-sans';
+    src: url(fond/Open_Sans/OpenSans-Light.ttf);
+}
+
+* {
+    font-family: 'Open-sans', Arial, Helvetica, sans-serif;
+}
+
 h3 {
     padding-top: 90px;
     font-size: 30px;
@@ -101,10 +111,14 @@ nav {
         max-width: 100%;
         &_block {
             outline: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             &_text {
+                max-width: 1185px;
+                margin: 0 auto;
                 margin-top: 120px;
                 text-align: center;
-                // font-family: "Open Sans";
                 color: #ffffff;
                 @media (max-width: 768px) {
                     margin: 60px 0 0 0;
@@ -119,7 +133,7 @@ nav {
                     font-weight: 400;
                     // border: 2px solid #384e5d;
                 }
-                p {
+                p:last-child {
                     font-size: 15px;
                     font-weight: 400;
                     max-width: 900px;
@@ -142,8 +156,8 @@ nav {
             }
             &_sl-img {
                 display: flex;
+                // align-items: center;
                 justify-content: center;
-                align-items: center;
                 img {
                     max-height: 500px;
                 }
@@ -192,76 +206,8 @@ nav {
 }
 
 .wrap {
-    // display: flex;
-    // justify-content: center;
-    // flex-direction: column;
-    // align-items: center;
-}
-
-.workflow {
-    background: #fafafa;
-    width: 100%;
-    &_element {
-        display: block;
-        max-width: 1158px;
-        margin: 0 auto;
-        padding: 0 20px 40px;
-        &_greeting {
-            // text-align: center;
-            // font-family: "Open Sans";
-            h3 {
-                color: $yel;
-            }
-            p {
-                margin: 0 auto;
-                color: $grey;
-                font-size: 15px;
-                font-weight: 700;
-                line-height: 24px;
-            }
-        }
-        &_processes {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            &_process {
-                margin: 60px 50px 0 0;
-                display: flex;
-                @media (max-width: 768px) {
-                    margin: 30px 0 0 0;
-                }
-                &_img {
-                    height: 54px;
-                    width: 54px;
-                    border: 1px solid black;
-                    border-radius: 50%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-right: 12px;
-                    img {
-                        height: 26px;
-                        margin: 0 12px;
-                    }
-                }
-                &_text {
-                    h4 {
-                        margin-top: 10px;
-                        font-size: 25px;
-                        font-weight: 300;
-                    }
-                    p {
-                        max-width: 253px;
-                        color: $grey;
-                        font-size: 14px;
-                        font-weight: 400;
-                        line-height: 24px;
-                        /* Text style for "Lorem Ipsu" */
-                        letter-spacing: 0.14px;
-                    }
-                }
-            }
-        }
-    }
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
