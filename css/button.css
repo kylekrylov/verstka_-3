@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:900');
-.news_slider_block_btn {
-    height: 500px;
+.news_slider_blocks_btn {
+    /* height: 500px; */
     box-sizing: border-box;
-    display: flex;
-    align-items: center;
+    /* display: flex;
     justify-content: center;
+    align-items: center; */
+    margin: 0 auto;
 }
 
 .my-super-cool-btn {
