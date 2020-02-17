@@ -1,0 +1,60 @@
+.about {
+  background: url(../img/about/bgd_about.jpg) no-repeat center/cover;
+  width: 100%;
+}
+
+.about_element_greeting {
+  text-align: center;
+}
+
+.about_element_greeting h3 {
+  color: black;
+}
+
+.about_element_greeting h2 {
+  color: #8e561b;
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.about_element_greeting p {
+  margin: 0 auto;
+  color: #8e561b;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 24px;
+}
+
+.about_element_doit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about_element_doit_img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.about_element_doit_proces-history {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.about_element_doit_proces-history_btn button {
+  margin: 10px;
+  padding: 10px;
+}
