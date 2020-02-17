@@ -121,9 +121,9 @@ nav {
                 text-align: center;
                 color: #ffffff;
                 padding: 0 10px 0;
-                @media (max-width: 768px) {
-                    margin: 60px 0 0 0;
-                }
+                // @media (max-width: 768px) {
+                //     margin: 60px 0 0 0;
+                // }
                 @media (max-width: 425px) {
                     margin: 30px 0 0 0;
                 }
@@ -145,7 +145,7 @@ nav {
                     }
                 }
                 p {
-                    font-size: 15px;
+                    font-size: 15px !important;
                     font-weight: 400;
                     // max-width: 850px;
                 }
