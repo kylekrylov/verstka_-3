@@ -49,7 +49,7 @@ $grey: #414141;
                 img {
                     max-width: 100%;
                     max-width: 100%;
-                    // object-fit: none;
+                    object-fit: contain;
                 }
             }
         }
@@ -93,4 +93,22 @@ $grey: #414141;
         width: calc(100% - 35px);
         height: 40px;
     }
+}
+
+.slick-dots li button {
+    border: 5px solid $yel;
+    border-radius: 50%;
+    opacity: 0.75;
+    width: 10px;
+    height: 10px;
+}
+
+.slick-dots li button:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+}
+
+.slick-dots li.slick-active button {
+    opacity: 1;
 }

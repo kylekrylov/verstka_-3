@@ -3,6 +3,10 @@
   width: 100%;
 }
 
+.about_element {
+  padding: 0 10px;
+}
+
 .about_element_greeting {
   text-align: center;
 }
@@ -29,6 +33,15 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.about_element_doit_img {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 33.333%;
+  flex: 0 0 33.333%;
 }
 
 .about_element_doit_img img {
@@ -38,23 +51,20 @@
   object-fit: cover;
 }
 
-.about_element_doit_proces-history {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 .about_element_doit_proces-history_btn button {
   margin: 10px;
   padding: 10px;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .about_element_doit {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .about_element_doit_img {
+    margin: 20px 10%;
+  }
 }
