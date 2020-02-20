@@ -72,10 +72,8 @@
   margin: 0 12px;
 }
 
-.workflow_element_processes_process_text h4 {
+.workflow_element_processes_process_text h5 {
   margin-top: 10px;
-  font-size: 25px;
-  font-weight: 300;
 }
 
 .workflow_element_processes_process_text p {

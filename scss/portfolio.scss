@@ -1,0 +1,73 @@
+$yel: #f4bb36;
+$grey: #414141;
+.portfolio {
+    &_element {
+        &_greeting {
+            h3 {
+                color: $yel;
+            }
+            h5 {
+                text-align: center;
+                color: #3e2d35;
+                font-weight: 700;
+                margin-top: 10px;
+            }
+            p {
+                margin: 20px auto 0;
+                font-size: 15px;
+                font-weight: 700;
+                line-height: 24px;
+                text-align: center;
+                color: #6f6e6c;
+                font-style: italic;
+            }
+        }
+        &_galery {
+            &_projects {
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                flex-wrap: wrap;
+                &_project {
+                    flex: 1 1 20%;
+                    position: relative;
+                    &_img {
+                        height: 300px;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    &_text {
+                        display: none;
+                        background-color: $yel;
+                        width: 100%;
+                        bottom: 0px;
+                        position: absolute;
+                        color: white;
+                        padding: 10px;
+                        h5 {
+                            font-weight: 700;
+                            text-transform: none;
+                        }
+                        p {
+                            font-size: 15px;
+                            font-style: italic;
+                            margin: 0 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.portfolio_element_galery_projects_project:hover {
+    img {
+        opacity: 0.35;
+    }
+    .portfolio_element_galery_projects_project_text {
+        display: block;
+    }
+}
