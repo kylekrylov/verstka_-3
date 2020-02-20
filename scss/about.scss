@@ -6,8 +6,6 @@
       &_element {
           padding: 0 10px;
           max-width: 1185px;
-          //   align-items: center;
-          //   flex-direction: row;
           &_greeting {
               text-align: center;
               h3 {
@@ -42,10 +40,11 @@
               &_proces-history {
                   max-width: 362px;
                   margin-left: 30px;
+                  //   display: flex;
                   h5 {
                       color: #3e2d35;
                       font-size: 20px;
-                      font-weight: 900;
+                      font-family: 'OpenSans-Bold';
                   }
                   p {
                       color: #8e561b;
@@ -53,17 +52,30 @@
                       margin-bottom: 35px;
                   }
                   &_btn {
+                      position: relative;
                       button {
-                          margin: 10px;
-                          padding: 10px;
-                          background-color: #fff;
+                          outline: 0;
+                          border: none;
+                          color: white;
+                          width: 170px;
+                          height: 48px;
+                          background-color: #0c1a2d;
+                          font-size: 15px;
+                          text-transform: uppercase;
+                          border-radius: 3px;
                       }
                   }
-                  @media (max-width: 768px) {
-                      flex-direction: column;
-                      &_img {
-                          margin: 20px 10%;
-                          // img {}
+              }
+              @media (max-width: 768px) {
+                  flex-direction: column;
+                  &_proces-history {
+                      max-width: 768px;
+                      text-align: center;
+                      margin-top: 20px;
+                      &_btn {
+                          text-align: right;
+                          right: 30px;
+                          bottom: 20px;
                       }
                   }
               }

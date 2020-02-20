@@ -70,7 +70,7 @@
 .about_element_doit_proces-history h5 {
   color: #3e2d35;
   font-size: 20px;
-  font-weight: 900;
+  font-family: 'OpenSans-Bold';
 }
 
 .about_element_doit_proces-history p {
@@ -79,20 +79,37 @@
   margin-bottom: 35px;
 }
 
+.about_element_doit_proces-history_btn {
+  position: relative;
+}
+
 .about_element_doit_proces-history_btn button {
-  margin: 10px;
-  padding: 10px;
-  background-color: #fff;
+  outline: 0;
+  border: none;
+  color: white;
+  width: 170px;
+  height: 48px;
+  background-color: #0c1a2d;
+  font-size: 15px;
+  text-transform: uppercase;
+  border-radius: 3px;
 }
 
 @media (max-width: 768px) {
-  .about_element_doit_proces-history {
+  .about_element_doit {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  .about_element_doit_proces-history_img {
-    margin: 20px 10%;
+  .about_element_doit_proces-history {
+    max-width: 768px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .about_element_doit_proces-history_btn {
+    text-align: right;
+    right: 30px;
+    bottom: 20px;
   }
 }
