@@ -31,6 +31,7 @@ $grey: #414141;
                 &_project {
                     flex: 1 1 20%;
                     position: relative;
+                    min-width: 250px;
                     &_img {
                         height: 300px;
                         img {
