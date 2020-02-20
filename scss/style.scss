@@ -10,6 +10,16 @@ $grey: #414141;
     src: url(../fond/Open_Sans/OpenSans-Light.ttf);
 }
 
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url(../fond/Open_Sans/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSans-ExtraBold';
+    src: url(../fond/Open_Sans/OpenSans-ExtraBold.ttf);
+}
+
 * {
     font-family: 'Open-sans', Arial, Helvetica, sans-serif;
 }
@@ -18,10 +28,15 @@ h3 {
     padding-top: 90px;
     font-size: 30px;
     font-size: 30px;
-    font-weight: 700;
+    // font-weight: 900;
     line-height: 77.37px;
     text-transform: uppercase;
     text-align: center;
+    font-family: 'OpenSans-Bold';
+}
+
+h1 {
+    font-family: 'OpenSans-Bold';
 }
 
 p {
