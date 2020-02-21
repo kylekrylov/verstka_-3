@@ -23,6 +23,36 @@ $grey: #414141;
             }
         }
         &_galery {
+            &_menu {
+                margin: 60px 0;
+                ul {
+                    display: flex;
+                    justify-content: center;
+                }
+                li {
+                    list-style: none;
+                    a {
+                        color: $grey;
+                        text-decoration: none;
+                        &:hover,
+                        &:active {
+                            color: $yel;
+                        }
+                    }
+                    &:after {
+                        content: "\007C";
+                        margin: 0 30px 0;
+                        color: #b7b7b7;
+                        @media (max-width: 1024px) {
+                            margin: 0 20px 0;
+                        }
+                    }
+                    &:last-child::after {
+                        content: "";
+                        margin: 0;
+                    }
+                }
+            }
             &_projects {
                 display: flex;
                 justify-content: center;
