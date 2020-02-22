@@ -2,7 +2,9 @@ $yel: #f4bb36;
 $grey: #414141;
 .portfolio {
     &_element {
+        // padding: 0 10px 0;
         &_greeting {
+            padding: 0 10px 0;
             h3 {
                 color: $yel;
             }

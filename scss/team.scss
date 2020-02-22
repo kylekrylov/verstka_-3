@@ -3,6 +3,7 @@ $grey: #414141;
 $grey2:#6f6e6c;
 .team {
     &_element {
+        padding: 0 10px 0;
         &_greeting {
             h3 {
                 color: $yel;
@@ -18,12 +19,11 @@ $grey2:#6f6e6c;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            margin-top: 25px;
             &_cart {
                 width: 370px;
                 border: 1px solid #cacaca;
                 background: #ffffff;
-                margin: 0 12px 0;
+                margin: 25px 12px 0;
                 border-bottom: 11px solid $yel;
                 &_img {
                     margin: 30px auto 20px;
@@ -37,23 +37,27 @@ $grey2:#6f6e6c;
                 }
                 &_text {
                     text-align: center;
-                    font-family: "Open Sans";
-                    // color: $grey2;
+                    // font-family: "Open Sans";
+                    color: $grey2;
+                    max-width: 274px;
+                    margin: 0 auto 5px;
                     h5 {
                         font-family: 'OpenSans-Bold';
                         text-transform: none;
-                        color: black;
+                        color: #000;
+                    }
+                    p {
+                        font-size: 15px;
                     }
                     p:last-child {
                         margin-top: 20px;
-                        font-family: 'OpenSans';
-                        color: black;
+                        font-size: 20px;
+                        color: #000;
                     }
                     p:first-child {
-                        color: $grey2;
-                        font-family: "Open Sans";
                         font-weight: 100;
-                        font-size: 20px;
+                        font-size: 15px;
+                        font-family: "Open Sans";
                         font-style: italic;
                     }
                     &_socet {
@@ -62,7 +66,10 @@ $grey2:#6f6e6c;
                 }
                 &:hover {
                     background: url(../img/our_team/bgr_team_cart.jpg);
-                    color: white;
+                    h5,
+                    p {
+                        color: white;
+                    }
                 }
             }
         }
