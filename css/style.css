@@ -61,6 +61,8 @@ p {
 }
 
 nav {
+  z-index: 1001;
+  position: fixed;
   background-color: #ffffff;
   width: 100%;
   display: -webkit-box;

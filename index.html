@@ -16,24 +16,23 @@
     <header>
         <nav>
             <div class="header_logo">
-
                 <a href="#"><img src="img/header/logo.png" alt="logo"></a>
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">working</a></li>
-                    <li><a href="#">about us</a></li>
-                    <li><a href="#">portfolio</a></li>
-                    <li><a href="#">team</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="#news">home</a></li>
+                    <li><a href="#workflow">working</a></li>
+                    <li><a href="#about">about us</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#team">team</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
             </div>
             <div class="burger">
                 <span> </span>
             </div>
         </nav>
-        <div class="news">
+        <div class="news" id="news">
             <div class="news_slider">
                 <div class="news_slider_blocks">
                     <div class="news_slider_blocks_text">
@@ -61,7 +60,7 @@
     </header>
 
     <div class="content">
-        <div class="workflow">
+        <div class="workflow" id="workflow">
             <div class="workflow_element">
                 <div class="workflow_element_greeting">
                     <h3>Our Workflow </h3>
@@ -127,7 +126,7 @@
                 </div>
             </div>
         </div>
-        <div class="about">
+        <div class="about" id="about">
             <div class="about_element">
                 <div class="about_element_greeting">
                     <h3>About us </h3>
@@ -156,7 +155,7 @@
                 </div>
             </div>
         </div>
-        <div class="portfolio">
+        <div class="portfolio" id="portfolio">
             <div class="portfolio_element">
                 <div class="portfolio_element_greeting">
                     <h3>Portfolio </h3>
@@ -270,7 +269,7 @@
                 </div>
             </div>
         </div>
-        <div class="team">
+        <div class="team" id="team">
             <div class="team_element">
                 <div class="team_element_greeting">
                     <h3>Our Team members</h3>
@@ -284,9 +283,13 @@
                         </div>
                         <div class="team_element_carts_cart_text">
                             <h5>Kyle Krylov</h5>
-                            <p> Boss</p>
+                            <span> Boss</span>
                             <p>"Java относится к javascript так же как сом к сомали."</p>
-                            <div class="team_element_carts_cart_text_socet"></div>
+                            <div class="team_element_carts_cart_text_socet">
+                                <a href="https://vk.com/kyle1" target="_blank"><img src="img/our_team/vk.svg" alt=""></a>
+                                <a href="https://teleg.run/kylekrylov" target="_blank"><img src="img/our_team/telegram.svg" alt=""></a>
+                                <a href="skype:kylekyle777?chat" target="_blank"><img src="img/our_team/skype.svg" alt=""></a>
+                            </div>
                         </div>
                     </div>
                     <div class="team_element_carts_cart">
@@ -295,9 +298,13 @@
                         </div>
                         <div class="team_element_carts_cart_text">
                             <h5>Keanu Charles Reeves</h5>
-                            <p>Jesus</p>
+                            <span>Jesus</span>
                             <p>"You are breathtaking!"</p>
-                            <div class="team_element_carts_cart_text_socet"></div>
+                            <div class="team_element_carts_cart_text_socet">
+                                <a href=""><img src="img/our_team/vk.svg" alt=""></a>
+                                <a href=""><img src="img/our_team/telegram.svg" alt=""></a>
+                                <a href=""><img src="img/our_team/skype.svg" alt=""></a>
+                            </div>
                         </div>
                     </div>
                     <div class="team_element_carts_cart">
@@ -306,9 +313,13 @@
                         </div>
                         <div class="team_element_carts_cart_text">
                             <h5>Evgenyi Abramson</h5>
-                            <p>Bro</p>
+                            <span>Bro</span>
                             <p>"I'm busy"</p>
-                            <div class="team_element_carts_cart_text_socet"></div>
+                            <div class="team_element_carts_cart_text_socet">
+                                <a href=""><img src="img/our_team/vk.svg" alt=""></a>
+                                <a href=""><img src="img/our_team/telegram.svg" alt=""></a>
+                                <a href=""><img src="img/our_team/skype.svg" alt=""></a>
+                            </div>
                         </div>
                     </div>
                     <div class="team_element_carts_cart">
@@ -316,10 +327,14 @@
                             <img src="img/our_team/ecologist.jpg" alt="Gretta">
                         </div>
                         <div class="team_element_carts_cart_text">
-                            <h5>Greta Thunberg</h5>
-                            <p> Ecologist</p>
+                            <h5>Greta Tintin Eleonora Ernman Thunberg</h5>
+                            <span> Ecologist</span>
                             <p>"Right hire right now!"</p>
-                            <div class="team_element_carts_cart_text_socet"></div>
+                            <div class="team_element_carts_cart_text_socet">
+                                <a href=""><img src="img/our_team/vk.svg" alt=""></a>
+                                <a href=""><img src="img/our_team/telegram.svg" alt=""></a>
+                                <a href=""><img src="img/our_team/skype.svg" alt=""></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -327,12 +342,15 @@
         </div>
     </div>
     <footer>
-        <div></div>
+        <div class="contact" id="contact"></div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js "></script>
     <script src="slick/slick.min.js"></script>
     <script src="js/burger.js"></script>
     <script src="js/slaider.js"></script>
+
+    <script src="js/scroll.js"></script>
+
 </body>
 
 </html>

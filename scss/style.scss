@@ -60,10 +60,11 @@ p {
 }
 
 nav {
+    z-index: 1001;
+    position: fixed;
     background-color: #ffffff;
     width: 100%;
     display: flex;
-    // position: fixed;
     justify-content: space-around;
     align-items: center;
     height: 60px;
