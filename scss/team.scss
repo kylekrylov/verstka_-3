@@ -17,6 +17,7 @@ $grey2:#6f6e6c;
         &_carts {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             margin-top: 25px;
             &_cart {
                 width: 370px;
@@ -24,7 +25,6 @@ $grey2:#6f6e6c;
                 background: #ffffff;
                 margin: 0 12px 0;
                 border-bottom: 11px solid $yel;
-                transition: all 0.3s ease 0s;
                 &_img {
                     margin: 30px auto 20px;
                     width: 274px;
@@ -42,14 +42,15 @@ $grey2:#6f6e6c;
                     h5 {
                         font-family: 'OpenSans-Bold';
                         text-transform: none;
-                        // color: black;
+                        color: black;
                     }
-                    &_position {
+                    p:last-child {
                         margin-top: 20px;
                         font-family: 'OpenSans';
+                        color: black;
                     }
-                    p {
-                        // color: $grey2;
+                    p:first-child {
+                        color: $grey2;
                         font-family: "Open Sans";
                         font-weight: 100;
                         font-size: 20px;
