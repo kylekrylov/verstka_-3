@@ -1,0 +1,69 @@
+$yel: #f4bb36;
+$grey: #414141;
+$grey2:#6f6e6c;
+.team {
+    &_element {
+        &_greeting {
+            h3 {
+                color: $yel;
+            }
+            p {
+                text-align: center;
+                color: $grey2;
+                font-size: 15px;
+                font-style: italic;
+            }
+        }
+        &_carts {
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+            &_cart {
+                width: 370px;
+                border: 1px solid #cacaca;
+                background: #ffffff;
+                margin: 0 12px 0;
+                border-bottom: 11px solid $yel;
+                transition: all 0.3s ease 0s;
+                &_img {
+                    margin: 30px auto 20px;
+                    width: 274px;
+                    height: 233px;
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: contain;
+                    }
+                }
+                &_text {
+                    text-align: center;
+                    font-family: "Open Sans";
+                    // color: $grey2;
+                    h5 {
+                        font-family: 'OpenSans-Bold';
+                        text-transform: none;
+                        // color: black;
+                    }
+                    &_position {
+                        margin-top: 20px;
+                        font-family: 'OpenSans';
+                    }
+                    p {
+                        // color: $grey2;
+                        font-family: "Open Sans";
+                        font-weight: 100;
+                        font-size: 20px;
+                        font-style: italic;
+                    }
+                    &_socet {
+                        margin: 0 auto;
+                    }
+                }
+                &:hover {
+                    background: url(../img/our_team/bgr_team_cart.jpg);
+                    color: white;
+                }
+            }
+        }
+    }
+}

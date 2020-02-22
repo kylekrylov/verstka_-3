@@ -3,6 +3,7 @@
 @import url("workflow.css");
 @import url("about.css");
 @import url("portfolio.css");
+@import url("team.css");
 @font-face {
   font-family: 'Open-sans';
   src: url(../fond/Open_Sans/OpenSans-Regular.ttf);
