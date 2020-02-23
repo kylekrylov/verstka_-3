@@ -1,0 +1,21 @@
+.contacts {
+    background: url(../img/contact/bgr_contacts.jpg)no-repeat center / cover;
+    h3 {
+        color: $yel;
+    }
+    h5 {
+        text-align: center;
+        color: #3e2d35;
+        font-weight: 700;
+        margin-top: 10px;
+    }
+    p {
+        margin: 20px auto 0;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: center;
+        color: #6f6e6c;
+        font-style: italic;
+    }
+}

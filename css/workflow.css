@@ -51,6 +51,7 @@
 }
 
 .workflow_element_processes_process_img {
+  cursor: pointer;
   height: 54px;
   width: 54px;
   border: 1px solid black;

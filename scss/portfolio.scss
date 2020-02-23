@@ -37,6 +37,7 @@ $grey: #414141;
                     a {
                         color: $grey;
                         text-decoration: none;
+                        cursor: pointer;
                         &:hover,
                         &:active {
                             color: $yel;
@@ -75,6 +76,7 @@ $grey: #414141;
                         }
                     }
                     &_text {
+                        cursor: pointer;
                         display: none;
                         background-color: $yel;
                         width: 100%;

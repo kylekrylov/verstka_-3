@@ -3,8 +3,10 @@ $grey: #414141;
 $grey2:#6f6e6c;
 .team {
     &_element {
-        padding: 0 10px 0;
+        margin: 0 auto;
+        max-width: 1950px;
         &_greeting {
+            padding: 0 10px 0;
             h3 {
                 color: $yel;
             }

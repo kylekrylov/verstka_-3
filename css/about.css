@@ -88,6 +88,7 @@
 }
 
 .about_element_doit_proces-history_btn button {
+  cursor: pointer;
   outline: 0;
   border: none;
   color: white;

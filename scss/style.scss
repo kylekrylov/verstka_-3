@@ -1,59 +1,15 @@
 // @import url("button.css");
 @import url("reset.css");
+@import url("const.css");
+@import url("header.css");
 @import url("news.css");
 @import url("workflow.css");
 @import url("about.css");
 @import url("portfolio.css");
 @import url("team.css");
+@import url("contact.css");
 $yel: #f4bb36;
 $grey: #414141;
-@font-face {
-    font-family: 'Open-sans';
-    src: url(../fond/Open_Sans/OpenSans-Regular.ttf);
-}
-
-@font-face {
-    font-family: 'OpenSans-Bold';
-    src: url(../fond/Open_Sans/OpenSans-Bold.ttf);
-}
-
-@font-face {
-    font-family: 'OpenSans-ExtraBold';
-    src: url(../fond/Open_Sans/OpenSans-ExtraBold.ttf);
-}
-
-@font-face {
-    font-family: 'OpenSans-Light';
-    src: url(../fond/Open_Sans/OpenSans-Light.ttf.ttf);
-}
-
-* {
-    font-family: 'Open-sans', Arial, Helvetica, sans-serif;
-}
-
-h3 {
-    padding-top: 60px;
-    font-size: 30px;
-    // font-weight: 900;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'OpenSans-Bold';
-}
-
-h1 {
-    font-family: 'OpenSans-Bold';
-}
-
-h5 {
-    font-size: 20px;
-    font-family: 'OpenSans-Bold';
-    text-transform: uppercase;
-}
-
-p {
-    margin-top: 15px;
-}
-
 .content {
     display: flex;
     flex-direction: column;
@@ -62,86 +18,4 @@ p {
 .slick-next,
 .slick-prev {
     width: 10%;
-}
-
-nav {
-    z-index: 1001;
-    position: fixed;
-    background-color: #ffffff;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 60px;
-    ul {
-        display: flex;
-        li {
-            list-style-type: none;
-            &:after {
-                content: "\007C";
-                margin: 0 30px 0;
-                @media (max-width: 1024px) {
-                    margin: 0 20px 0;
-                }
-            }
-            &:last-child::after {
-                content: "";
-                margin: 0;
-            }
-        }
-        a {
-            color: #ffffff;
-            text-transform: uppercase;
-            text-decoration: none;
-            width: 664px;
-            height: 13px;
-            color: #000000;
-            // font-family: "Open Sans", Arial, Helvetica, sans-serif;
-            font-size: 13px;
-            font-weight: 400;
-            line-height: 24px;
-            text-transform: uppercase;
-            padding: 5px 0 5px;
-            &:hover {
-                border-bottom: 3px solid $yel;
-            }
-            &:active {
-                border-bottom: 2px solid $yel;
-            }
-        }
-        @media (max-width: 768px) {
-            display: none;
-        }
-    }
-}
-
-.burger {
-    position: relative;
-    width: 30px;
-    height: 20px;
-    // transition: all 0.5s ease 0s;
-    &:before,
-    &:after,
-    span {
-        content: "";
-        position: absolute;
-        background-color: #000;
-        width: 30px;
-        height: 4px;
-        transition: all 0.1s ease 0s;
-        border-radius: 2px;
-    }
-    &:before {
-        top: 0;
-    }
-    &:after {
-        bottom: 0;
-    }
-    span {
-        top: 8px;
-    }
-    display: none; //!!
-    @media (max-width: 768px) {
-        display: block;
-    }
 }
