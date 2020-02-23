@@ -2,8 +2,13 @@
 //
 $('.news_slider').slick({
     dots: true,
-    // infinite: true,
-    // speed: 500,
-    // fade: true,
     cssEase: 'linear'
+});
+
+$('.team_element_carts').slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    centerMode: true,
+    variableWidth: true
 });

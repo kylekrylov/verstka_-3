@@ -59,6 +59,11 @@ p {
     flex-direction: column;
 }
 
+.slick-next,
+.slick-prev {
+    width: 10%;
+}
+
 nav {
     z-index: 1001;
     position: fixed;
