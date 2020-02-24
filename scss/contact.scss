@@ -1,21 +1,75 @@
+$yel: #f4bb36;
+$grey: #414141;
 .contacts {
+    color: white;
     background: url(../img/contact/bgr_contacts.jpg)no-repeat center / cover;
-    h3 {
-        color: $yel;
+    &_header {
+        h5 {
+            text-transform: none;
+            text-align: center;
+            font-weight: 300;
+            margin-top: 10px;
+        }
+        p {
+            margin: 20px auto 0;
+            font-size: 15px;
+            font-weight: 100;
+            line-height: 24px;
+            text-align: center;
+            font-style: italic;
+        }
     }
-    h5 {
-        text-align: center;
-        color: #3e2d35;
-        font-weight: 700;
-        margin-top: 10px;
+    &_form-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 50px;
     }
-    p {
-        margin: 20px auto 0;
-        font-size: 15px;
-        font-weight: 700;
-        line-height: 24px;
-        text-align: center;
-        color: #6f6e6c;
-        font-style: italic;
+    &_form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        input,
+        textarea {
+            color: white;
+            border: 1px solid #c5c5c5;
+            background: rgba(255, 255, 255, 0);
+            outline: none;
+            margin-top: 10px;
+            &:focus {
+                border: 1px solid rgb(255, 255, 255);
+            }
+            &::placeholder {
+                font-size: 14px;
+                font-style: italic;
+                padding: 0 10px 0px;
+            }
+        }
+    }
+    &_info {
+        img {
+            width: 20px;
+        }
+    }
+    &_tel,
+    &_mail,
+    &_address {
+        display: flex;
+        p {
+            margin: 0;
+        }
+    }
+    &_socet {
+        &_img {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            img {
+                background: white;
+                height: 40px;
+                width: 40px;
+                margin: 5px;
+            }
+        }
     }
 }
