@@ -1,34 +1,22 @@
 $yel: #f4bb36;
 $grey: #414141;
 .contacts {
+    padding: 0 10px;
     color: white;
     background: url(../img/contact/bgr_contacts.jpg)no-repeat center / cover;
-    &_header {
-        h5 {
-            text-transform: none;
-            text-align: center;
-            font-weight: 300;
-            margin-top: 10px;
-        }
-        p {
-            margin: 20px auto 0;
-            font-size: 15px;
-            font-weight: 100;
-            line-height: 24px;
-            text-align: center;
-            font-style: italic;
-        }
-    }
     &_form-info {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-top: 50px;
+        padding: 50px 0 50px 0;
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
     }
     &_form {
         display: flex;
-        justify-content: center;
         flex-direction: column;
+        width: 600px;
         input,
         textarea {
             color: white;
@@ -36,8 +24,10 @@ $grey: #414141;
             background: rgba(255, 255, 255, 0);
             outline: none;
             margin-top: 10px;
+            resize: none;
+            width: 100%;
             &:focus {
-                border: 1px solid rgb(255, 255, 255);
+                border: 2px solid rgb(255, 255, 255);
             }
             &::placeholder {
                 font-size: 14px;
@@ -45,30 +35,58 @@ $grey: #414141;
                 padding: 0 10px 0px;
             }
         }
+        textarea {
+            height: 80px;
+        }
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+    }
+    &_sc-info {
+        padding: 0 0 0 50px;
+        @media (max-width: 768px) {
+            text-align: center;
+            margin: 0 auto;
+            padding: 0;
+        }
     }
     &_info {
-        img {
+        h5 {
+            text-transform: none;
+        }
+        span {
             width: 20px;
+            img {}
+        }
+        @media (max-width: 768px) {
+            text-align: center;
         }
     }
     &_tel,
     &_mail,
     &_address {
+        @media (max-width: 768px) {
+            text-align: center;
+        }
+        margin-top: 25px;
         display: flex;
         p {
-            margin: 0;
+            margin: 0 0 0 25px;
         }
     }
     &_socet {
+        h5 {
+            margin-top: 20px;
+            text-transform: none;
+        }
         &_img {
             display: flex;
-            justify-content: center;
             flex-direction: row;
             img {
                 background: white;
                 height: 40px;
                 width: 40px;
-                margin: 5px;
+                margin-right: 10px;
             }
         }
     }
