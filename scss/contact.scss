@@ -45,6 +45,8 @@ $grey: #414141;
     &_sc-info {
         padding: 0 0 0 50px;
         @media (max-width: 768px) {
+            // display: flex;
+            // flex-direction: row;
             text-align: center;
             margin: 0 auto;
             padding: 0;
