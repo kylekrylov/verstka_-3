@@ -14,13 +14,13 @@
   color: #f4bb36;
 }
 
-.workflow_element_greeting p {
-  margin: 0 auto;
+.workflow_element_greeting span {
+  display: block;
+  text-align: center;
   color: #414141;
   font-size: 15px;
   font-weight: 700;
   line-height: 24px;
-  text-align: center;
 }
 
 .workflow_element_processes {
