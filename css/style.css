@@ -21,3 +21,21 @@
 .slick-prev {
   width: 10%;
 }
+
+.slick-dots li button {
+  border: 5px solid #f4bb36;
+  border-radius: 50%;
+  opacity: 0.75;
+  width: 10px;
+  height: 10px;
+}
+
+.slick-dots li button:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+}
+
+.slick-dots li.slick-active button {
+  opacity: 1;
+}

@@ -76,20 +76,21 @@
 .btn {
   padding: 8px 20px;
   font-size: 20px;
+  font-family: 'OpenSans-Bold';
   cursor: pointer;
   position: relative;
-  border: 2px solid #f4bb36;
+  border: 2px solid #414141af;
   outline: none;
-  color: white;
+  color: #f4bb36;
   background-color: transparent;
   margin: 20px;
-  white-space: nowrap;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.36);
 }
 
 .btn::after, .btn::before {
   content: "";
   position: absolute;
-  border: 2px solid #f4bb36;
+  border: 2px solid #414141af;
   width: calc(100% - 5px);
   height: 20px;
   -webkit-transition: 0.5s ease;
@@ -98,15 +99,15 @@
 }
 
 .btn::after {
-  top: -8px;
-  left: -8px;
+  top: -6px;
+  left: -6px;
   border-right: none;
   border-bottom: none;
 }
 
 .btn::before {
-  bottom: -8px;
-  right: -8px;
+  bottom: -6px;
+  right: -6px;
   border-left: none;
   border-top: none;
 }
@@ -114,22 +115,4 @@
 .btn:hover:after, .btn:hover:before {
   width: calc(100% - 35px);
   height: 40px;
-}
-
-.slick-dots li button {
-  border: 5px solid #f4bb36;
-  border-radius: 50%;
-  opacity: 0.75;
-  width: 10px;
-  height: 10px;
-}
-
-.slick-dots li button:before {
-  content: "";
-  width: 10px;
-  height: 10px;
-}
-
-.slick-dots li.slick-active button {
-  opacity: 1;
 }
