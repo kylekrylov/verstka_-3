@@ -100,6 +100,20 @@
   border-radius: 3px;
 }
 
+.about_element_doit_proces-history_btn button:hover {
+  -webkit-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+  transition: 0.4s ease;
+  letter-spacing: 1pt;
+}
+
+.about_element_doit_proces-history_btn button:active {
+  -webkit-transition: 0.1s ease;
+  -o-transition: 0.1s ease;
+  transition: 0.1s ease;
+  color: #f4bb36;
+}
+
 @media (max-width: 768px) {
   .about_element_doit {
     -webkit-box-orient: vertical;

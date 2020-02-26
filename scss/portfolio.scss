@@ -28,17 +28,12 @@ $grey: #414141;
         &_galery {
             &_menu {
                 margin: 60px 0;
-                ul {
-                    display: flex;
-                    justify-content: center;
-                    flex-wrap: wrap
-                }
-                li {
-                    list-style: none;
+                display: flex;
+                justify-content: center;
+                &_btn {
+                    cursor: pointer;
                     a {
                         color: $grey;
-                        text-decoration: none;
-                        cursor: pointer;
                         &:hover,
                         &:active {
                             color: $yel;

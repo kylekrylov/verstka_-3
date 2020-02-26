@@ -15,12 +15,10 @@
 }
 
 .workflow_element_greeting span {
+  font-size: 15px;
   display: block;
   text-align: center;
   color: #414141;
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 24px;
 }
 
 .workflow_element_processes {
