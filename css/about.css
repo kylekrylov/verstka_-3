@@ -33,6 +33,8 @@
   margin: 0 auto;
   color: #8e561b;
   font-size: 15px;
+  font-weight: 300;
+  max-width: 850px;
   font-style: italic;
   margin-top: 10px;
 }
