@@ -31,10 +31,13 @@ $grey: #414141;
                 margin: 60px 0;
                 display: flex;
                 justify-content: center;
+                flex-wrap: wrap;
                 &_btn {
                     cursor: pointer;
-                    a {
+                    button {
                         color: $grey;
+                        background: none;
+                        border: none;
                         &:hover,
                         &:active {
                             color: $yel;
@@ -46,6 +49,10 @@ $grey: #414141;
                         color: #b7b7b7;
                         @media (max-width: 1024px) {
                             margin: 0 20px 0;
+                            // @media (max-width: 600px) {
+                            //     margin: 0 3px 0;
+                            //     content: "\007C";
+                            // }
                         }
                     }
                     &:last-child::after {
@@ -62,6 +69,7 @@ $grey: #414141;
                 &_project {
                     flex: 1 1 20%;
                     position: relative;
+                    max-width: 600px;
                     &_img {
                         min-width: 250px;
                         height: 300px;
