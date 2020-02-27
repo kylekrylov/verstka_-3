@@ -35,3 +35,9 @@
 .slick-dots li.slick-active button {
   opacity: 1;
 }
+
+@media (max-width: 768px) {
+  body.lock {
+    overflow: hidden;
+  }
+}
