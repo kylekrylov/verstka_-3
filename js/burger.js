@@ -5,4 +5,8 @@ $(document).ready(function() {
         $('.burger,.menu').toggleClass('active');
         $('body').toggleClass('lock')
     });
+    $('.menu a').click(function(e) {
+        $('.menu.burger').removeClass('active');
+    });
+
 });

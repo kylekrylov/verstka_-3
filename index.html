@@ -362,14 +362,14 @@
                 <h3>Contact us </h3>
             </div>
             <div class="contacts_form-info">
-                <div class="contacts_form">
-                    <input name="name" type="name" alt="Name" placeholder="Name" pattern="[A-Za-zА-Яа-яЁё]+" maxlength="22" required>
-                    <input name=" email " type="email " alt="Email " placeholder="Email" pattern="[A-Za-z]+" required>
-                    <input name="phone " type="phone " alt="Phone " placeholder="Phone +7 (123) 456-78-90 " pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2} " minlength="18 " maxlength="18 " required>
+                <form class="contacts_form">
+                    <input name="name" type="name" alt="Name" placeholder="Name" pattern="[A-Za-z]+|[А-ЯЁа-яё]+" maxlength="22" required>
+                    <input name=" email " type="email " alt="Email " placeholder="Email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
+                    <input name="phone " type="phone "    alt="Phone " placeholder="+7(123)456-78-90" pattern="[\+]\d{1}\[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" minlength="16 " maxlength="17 " required>
                     <textarea name="Massege " placeholder="Massege " resize: none;></textarea>
                     <button type="submit ">Send</button>
 
-                </div>
+                </form>
                 <div class="contacts_sc-info ">
                     <div class="contacts_info ">
                         <h5>Contact info </h5>
