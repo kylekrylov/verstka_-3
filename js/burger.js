@@ -6,7 +6,8 @@ $(document).ready(function() {
         $('body').toggleClass('lock')
     });
     $('.menu a').click(function(e) {
-        $('.menu.burger').removeClass('active');
+        $('.burger,.menu').removeClass('active');
+        $('body').removeClass('lock')
     });
 
 });
