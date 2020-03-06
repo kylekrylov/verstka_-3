@@ -17,6 +17,17 @@ $yel: #f4bb36;
 .slick-next,
 .slick-prev {
     width: 10%;
+    z-index: 1;
+    height: 450px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: $yel;
+}
+
+.slick-prev {
+    z-index: 2;
 }
 
 .slick-dots li button {
