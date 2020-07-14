@@ -21,6 +21,14 @@ $yel: #f4bb36;
     height: 450px;
 }
 
+.slick-next {
+    right: 0;
+}
+
+.slick-prev {
+    left: 0;
+}
+
 .slick-prev:before,
 .slick-next:before {
     color: $yel;

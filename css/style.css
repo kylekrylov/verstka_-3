@@ -8,47 +8,55 @@
 @import url("team.css");
 @import url("contact.css");
 .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
 .slick-next,
 .slick-prev {
-  width: 10%;
-  z-index: 1;
-  height: 450px;
+    width: 10%;
+    z-index: 1;
+    height: 450px;
+}
+
+.slick-next {
+    right: 0;
+}
+
+.slick-prev {
+    left: 0;
 }
 
 .slick-prev:before,
 .slick-next:before {
-  color: #f4bb36;
+    color: #f4bb36;
 }
 
 .slick-prev {
-  z-index: 2;
+    z-index: 2;
 }
 
 .slick-dots li button {
-  border: 5px solid #f4bb36;
-  border-radius: 50%;
-  opacity: 0.75;
+    border: 5px solid #f4bb36;
+    border-radius: 50%;
+    opacity: 0.75;
 }
 
 .slick-dots li button:before {
-  content: "";
+    content: "";
 }
 
 .slick-dots li.slick-active button {
-  opacity: 1;
+    opacity: 1;
 }
 
 @media (max-width: 768px) {
-  body.lock {
-    overflow: hidden;
-  }
+    body.lock {
+        overflow: hidden;
+    }
 }
